@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <script defer src="./src/JS/script.js"></script>
+</head>
+<body>
+  <header class="container">
+    <section class="left">
+      <button class="btn-menu" title="abrir o menu">
+        <img src="./images/icon-menu.svg" alt="menu icon">
+      </button>
+      
+      <img src="./images/logo.svg" alt="logo icon" class="logo">
+      
+      <nav class="header-navbar">
+        <ul class="navbar">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="right">
+      <div class="container">
+        <button class="btn-cart" title="abrir carrinho de compras">
+          <img src="./images/icon-cart.svg" alt="cart icon">
+        </button>
+
+        <span class="amount-products"></span>
+      </div>
+
+      <img src="./images/image-avatar.png" alt="avatar image" class="avatar-image">
+
+      <section class="cart">
+        <header class="header-cart"><h3>Cart</h3></header>
+        <hr>
+        <div class="cart-content empty active"><p>Your cart is empty.</p></div>
+
+        <div class="cart-content filled">
+          <div class="container">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="product thumbnail">
+
+            <div class="product-summary">
+              <h3>Fall Limited Edition Sneakers</h3>
+              <p>$125.00 x <span class="amount-products">0</span> <span class="bill">$0.00</span></p>
+            </div>
+
+            <button class="btn-delete"><img src="./images/icon-delete.svg" alt="garbage icon"></button>
+          </div>
+
+          <button class="btn-checkout">checkout</button>
+        </div>
+      </section>
+    </section>
+    
+    <hr>
+  </header>
+
+
+  <main>
+    <section class="gallery-lightbox">
+      <div class="container">
+        <button class="btn-close" title="fechar galeria">
+          <img src="./images/icon-close.svg" alt="close icon">
+        </button>
+
+        <img src="./images/image-product-1.jpg" alt="product image" class="featured-image">
+
+        <button class="btn-previous" title="mudar para a imagem anterior imagem">
+          <img src="./images/icon-previous.svg" alt="icon previous">
+        </button>
+
+        <button class="btn-next" title="mudar para a próxima imagem">
+          <img src="./images/icon-next.svg" alt="icon next">
+        </button>
+
+        <div class="thubnails">
+          <div class="thumbnail-borde active">
+            <img src="./images/image-product-1-thumbnail.jpg" data-thumb-number="1" alt="thumbnail image">
+          </div>
+          <div class="thumbnail-borde">
+            <img src="./images/image-product-2-thumbnail.jpg" data-thumb-number="2" alt="thumbnail image">
+          </div>
+          <div class="thumbnail-borde">
+            <img src="./images/image-product-3-thumbnail.jpg" data-thumb-number="3" alt="thumbnail image">
+          </div>
+          <div class="thumbnail-borde">
+            <img src="./images/image-product-4-thumbnail.jpg" data-thumb-number="4" alt="thumbnail image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <img src="./images/image-product-1.jpg" alt="product image" class="featured-image">
+      
+      <div class="thubnails">
+        <div class="thumbnail-borde active">
+          <img src="./images/image-product-1-thumbnail.jpg" data-thumb-number="1" alt="thumbnail image">
+        </div>
+        <div class="thumbnail-borde">
+          <img src="./images/image-product-2-thumbnail.jpg" data-thumb-number="2" alt="thumbnail image">
+        </div>
+        <div class="thumbnail-borde">
+          <img src="./images/image-product-3-thumbnail.jpg" data-thumb-number="3" alt="thumbnail image">
+        </div>
+        <div class="thumbnail-borde">
+          <img src="./images/image-product-4-thumbnail.jpg" data-thumb-number="4" alt="thumbnail image">
+        </div>
+      </div>
+    </section>
+    
+    <article class="page-content">
+      <h1>Sneaker Company</h1>
+
+      <h2>Fall Limited Edition Sneakers</h2>
+
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="product-price">
+        <p class="new-price"><span class="current-price">$125.00</span><span class="discount">50%</span></p>
+        
+        <p class="old-price"><del>$250.00</del></p>
+      </div>
+
+      <div class="container">
+        <div class="product-amount-settings">
+          <button class="btn-minus">
+            <img src="./images/icon-minus.svg" alt="minus icon">
+          </button>
+          
+          <span class="amount-products">0</span>
+          
+          <button class="btn-plus">
+            <img src="./images/icon-plus.svg" alt="plus icon">
+          </button>
+        </div>
+
+        <button class="btn-add-item">
+          <img src="./images/icon-cart.svg" alt="">
+          Add to cart
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Ramon Henrique</a>.
+    </p>
+  </footer>
+</body>
+</html>
